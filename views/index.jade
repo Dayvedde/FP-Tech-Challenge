@@ -10,6 +10,19 @@ html.
 	<body>
 		<div ng-controller="AppCtrl" ng-cloak></div>
 			<!-- INSERT HTML CODE HERE -->
+			<div ng-app="myApp" ng-controller="AppCtrl">
+				<input id="input-style-code" type="text" placeholder="Style Code" 
+					ng-model="styleCode" />
+				<input id="input-color-code" type="text" placeholder="Color Code" 
+					ng-model="colorCode"/>
+				<input id="input-size-code" type="text" placeholder="Size Code" 
+					ng-model="sizeCode"/>
+					
+				<button id="btn-submit" type="button" class="btn btn-primary" 
+					ng-click="test()">Submit</button>
+				<div class="results"></div>
+			</div>
+
 			<h2> FRESH PRINTS TECH CHALLENGE </h2>
 		<script src="js/lib/angular/angular.js"></script>
 		<script src="js/app.js"></script>
@@ -17,4 +30,10 @@ html.
 		<script src="js/controllers.js"></script>
 		<script src="js/filters.js"></script>
 		<script src="js/directives.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	</body>
+
+script.
+	$(document).ready(function(){
+		
+	});
